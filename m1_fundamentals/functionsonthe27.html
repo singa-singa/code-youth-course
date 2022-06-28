@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function city_and_provence(city, provence) {
+            console.log("Your city is: ")
+            console.log("Your provencd is: ", provence)
+        }
+        let city = prompt("Enter the city your live in: ")
+        let provence = prompt("Enter the provence your live in: ")
+        city_and_provence(city, provence)
+
+        function add(num1, num2) {
+            sum = num1 + num2;
+            console.log("the sum of numbers 1 and 2 is: ", sum);
+        }
+        let num1 = prompt("Enter the value for number1: ")
+        let num2 = prompt("Enter the value for number 2: ")
+        add(num1, num2)
+
+
+        function substraction(value1, value2) {
+            sum_of_sub = value1 - value2;
+            console.log("The result of sumtraction is:", sum_of_sub)
+        }
+        let value1 = prompt("Enter the number for value1: ")
+        let value2 = prompt("Enter the number for value 2: ")
+        substraction(value1, value2)
+
+        function multiplication(value1_of_mult, value2_of_mult) {
+            sum_of_mult = value1_of_mult * value2_of_mult;
+            console.log("The results of values multiplies are: ", sum_of_mult)
+        }
+        let value1_of_mult = prompt("Enter the first value for mult: ")
+        let value2_of_mult = prompt("Enter the second value for mult: ")
+        multiplication(value1_of_mult, value2_of_mult)
+
+        function divition(div_num1, div_num2) {
+            if (div_num1 == 0 || div_num2 == 0) {
+                console.log("Number can not be diveded by zero!")
+            } else {
+                sum_of_div = div_num1 / div_num2;
+                console.log("The sum of diveded numbers is: ", sum_of_div)
+            }
+        }
+        let div_num1 = prompt("Enter the first number for div: ")
+        let div_num2 = prompt("Enter the second number for div: ")
+        divition(div_num1, div_num2)
+
+    </script>
+</body>
+
+</html>
