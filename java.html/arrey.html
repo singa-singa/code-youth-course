@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let color = ["green", "purple", "white", , , , , "black"];
+        // push method - add elemnt to the end of an arrey
+        color.push("grey",)
+        console.log(color);
+        // pop - remove last element
+
+        let ele = color.pop();
+        console.log(color);
+        //unshift - add element to the start if anu arrey
+        color.unshift("pink")
+        console.log("unshift", color);
+
+        //shift removes the first element
+        let item = color.shift();
+        console.log("shift:", color);
+
+        //slice = part an array arr.slice(start)
+        let slicedArr = color.slice();
+        console.log("slice", slicedArr);
+
+        //sort
+        let sortedArr = color.sort();
+        let numbers = [5, 7, 12, 67, 34, 10];
+        console.log("sorted", sortedArr)
+        console.log("sorted numbers1", numbers.sort())
+        let sortNum1 = numbers.sort(function (a, b) {
+            return a - b;
+        })
+        //reverse
+        let reveresedArr = color.reverse();
+        console.log("reversed", reveresedArr);
+
+
+
+    </script>
+</body>
+
+</html>

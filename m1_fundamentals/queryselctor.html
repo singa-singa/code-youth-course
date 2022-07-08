@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>first paragraph</p>
+    <p>second paragraph</p>
+    <script>
+        const par3 = document.createElement("p")
+        par3.innerText = "third paragraph"
+        par3.id = "par3";
+        console.log(par3);
+        document.body.appendChild(par3);
+
+        // atag in p tag
+        const anc = document.createElement("a")
+        anc.href = "http://yahoo.com"
+        anc.innerText = "Yahoo"
+        document.querySelector("#par3").appendChild(anc)
+        document.body.appendChild(par3)
+
+
+
+    </script>
+</body>
+
+</html>

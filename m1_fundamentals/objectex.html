@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const user = {
+            username: "jonathanboabo",
+            passward: "*************",
+            email: "jonathan.boabo@vrs.com",
+            id: 1122
+        }
+        console.log("Your user name is:", user.username)
+        console.log("Your passward is:", user.passward)
+        console.log("Your email is:", user.email)
+        sonsole.log("Your Id is:", user.id)
+
+        //person first and last name, with their score.
+
+        const person = {
+            firstName: "Mondo",
+            lastName: "Bobo",
+            score: 12
+        }
+        console.log("Hi! my first name is", person.firstName, "and my given last name is", lastName, ". My score is:", person.score);
+
+        // object named car!!
+
+        const car = {
+            make: "Toyota",
+            model: "Corolla",
+            year: 2021,
+            mileage: "30-km",
+            tarnOn: function () {
+                console.log("The car has been turned on!")
+            },
+            turnOff: function () {
+                console.log("The car has been turned off!!")
+            }
+        }
+        console.log("make of are:", car.make, "model of the car", car.model, ". Year of the car:", car.year, ". Mileage of the car:", car.mileage);
+        car.tarnOn()
+        car.turnOff()
+
+
+
+        /// object called test
+
+        const test = {
+            test0: {
+                testName: "Jordan Murcus",
+                numParticipant: 1,
+                testPass: true
+
+            },
+            test1: {
+                testName: "Jacob Jack",
+                numPartiicipant: 1,
+                testPass: false
+            }
+        }
+        for (let choice in test) {
+            if (test[key]["testPass"] == true) {
+                cocsole.log(test[key]["testName"])
+            }
+        }
+    </script>
+</body>
+
+</html>

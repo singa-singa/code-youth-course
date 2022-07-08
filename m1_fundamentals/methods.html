@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const person = {
+            birth_place: "congo",
+            country_of_rez: "Canada",
+            name: {
+                firstname: "John",
+                lastname: "Bobo",
+            },
+            age: 54,
+            function1: function () {
+                return "Hello";
+            },
+            display: function () {
+                return person.name.firstname + " " + person.name.lastname + " has age " + person.age;
+            },
+            show: function (id) {
+                return person.name.firstname + " with id " + id;
+            }
+        };
+
+        console.log(person.show(24))
+        console.log(person.display())
+
+        /// create an arrey of objects
+
+        const books = {
+            title: "boyombe",
+            author: "Jackson Mere",
+            alreadyRead: true,
+            checkIf_already_read: function () {
+                if (alreadyRead === true) {
+                    console.log("you already read " + this.title, this.author)
+                } else {
+                    console.log("You have not ready " + this.title, this.author)
+                }
+            }
+        }
+        ///jfsijfijfkeekf
+
+
+
+
+        const line_of_books = [
+
+            {
+                title: "Cat in a hat",
+                author: "jordan daniels",
+                read: true
+            },
+            {
+                title: "Monkey D. tro",
+                author: "Job",
+                read: true
+            },
+            {
+                title: "tom and jerry",
+                author: "jack louis",
+                read: false
+            },
+
+        ];
+        for (let items in line_of_books) {
+            if (line_of_books[items].read === true) {
+                console.log("you have already read the book ", line_of_books[items].title, line_of_books[items].author)
+            } else {
+                console.log("You have not read the book ", line_of_books[items].title, " ", line_of_books[items].author)
+            }
+        }
+
+
+        let fev_recipe = {
+            title: "Steak",
+            servings: 2,
+            ingredients: ["Cow Meat", "salt", "Oil", "cumin", "herbs"]
+        }
+        console.log(fev_recipe.title);
+        console.log("Serves: ", 2);
+        console.log("ingredients:")
+        for (key in fev_recipe.ingredients) {
+            console.log("-", fev_recipe.ingredients[key])
+        }
+
+
+    </script>
+</body>
+
+</html>

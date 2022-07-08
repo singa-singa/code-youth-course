@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let student = {
+            id_namber: 229,
+            name: "Jackson",
+            address: {
+                country_of_origin: "USA",
+                country_of_rez: "Canada",
+                Provence: "Ontario",
+                city: "Ottawa"
+            },
+            email: "jackson.joker@gamil.com",
+            phone: ["Home_phone: 343-553-6452", "Cell_phon: 343-556-6675"],
+            marks: [89, 89, 90, 97, 98, 96, 45, 94, 94, 92, 93, 91]
+        }
+        if (student.marks < 50) {
+            console.log("Student's mark in englsik class: ", student.marks)
+        }
+        console.log("Id Namber", student.is_number);
+        console.log("Name", student.name);
+        console.log("Address", student.address)
+        console.log("email", student.email)
+        console.log("Home phone number", student.phone[0])
+        console.log("Cell Phone Number", student.phone[1])
+        console.log("Students mark in english Class", student.marks[6])
+        console.log("Hello, my name is", student.name, "and I live in", student.address.country_of_rez, " but I come from", student.address.country_of_origin, ". My student Id is", student.id_namber, ". My  cellphone number is: ", student.phone[1], "but if you wish to contact my parents you can reach them throught the home phone", student.phone[0], ". That's all for now thank you!")
+        /// using for loop with objects!!
+
+        const person = {
+            id: 323,
+            name: "John",
+            email: "john@gmail.com",
+            addres: {
+                country: "canada",
+                provence: "Ontario",
+                city: "Ottawa"
+            },
+            phone_number: 3435456556
+        }
+        for (let key in person) {
+            if (typeof person[key] == "object") {
+                for (let akey in student[key]) {
+                    console.log(akey, "=>", student[key][akey])
+                }
+            } else {
+                console.log(key, ":", person[key])
+            }
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #blue {
+            color: blue;
+        }
+
+        #red {
+            color: red;
+        }
+
+        #orange {
+            color: orange;
+        }
+
+        #noir {
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="heading">'-Wecome to code youth</h1>
+    <p id="one">This is the firsr paragraph</p>
+    <p> This is the second paragraph</p>
+    <ul id="list">
+        <li id="blue">blue</li>
+        <li id="red">red</li>
+        <li id="orange">orange</li>
+        <li id="noir">noir</li>
+    </ul>
+    <button onclick="change()">change</button>
+    <script>
+        function change() {
+            document.getElemetnById("one").innerHTML = "changed paragraph";
+            const purplle = document.getElementById("blue");
+            const green = document.getElementById("red");
+            const pink = document.getElementById("orange");
+            const yelllow = document.getElementById("noir");
+            purplle.style.color = "purple";
+            green.style.color = "green";
+            pink.style.color = "pink";
+            yelllow.style.color = "yellow"
+        }
+        let p = document.querySelectorAll("p")
+        console.log(p[1])
+
+        //examples
+
+
+    </script>
+</body>
+
+</html>

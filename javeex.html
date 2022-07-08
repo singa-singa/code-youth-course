@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p class="one">this is what is going in many parts of the world</p>
+    <p id="woke">this is what is going in many parts of the world</p>
+    <button onclick="change()">Change</button>
+    <script>
+        function change() {
+            document.getElementsByClassName("one").innerHTML = "there is a lot to talk about in the world";
+            document.getElementById("woke").innerHTML = "There is nothing to worry about";
+        }
+    </script>
+</body>
+
+</html>

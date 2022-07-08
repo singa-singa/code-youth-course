@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1">
+        <tr>
+            <th>length</th>
+            <th>width</th>
+            <th>area</th>
+        </tr>
+    </table>
+    <button onclick="change()">Change</button>
+    <script>
+        function change() {
+
+            const add_table = document.getElementsByTagName("table")[0];
+            const tr1 = document.createElement("tr");
+            const tr2 = document.createElement("tr");
+            const tr1_td1 = document.createElement("td")
+            const tr1_td2 = document.createElement("td")
+            const tr1_td3 = document.createElement("td")
+            const tr2_td1 = document.createElement("td")
+            const tr2_td2 = document.createElement("td")
+            const tr2_td3 = document.createElement("td")
+            tr1_td1.innerHTML = 6
+            tr1_td2.innerHTML = 5
+            tr1_td3.innerHTML = 4
+            tr2_td1.innerHTML = 3
+            tr2_td2.innerHTML = 2
+            tr2_td3.innerHTML = 1
+            tr1.appendChild(tr1_td1)
+            tr1.appendChild(tr1_td2)
+            tr1.appendChild(tr1_td3)
+            tr2.appendChild(tr2_td1)
+            tr2.appendChild(tr2_td2)
+            tr2.appendChild(tr2_td3)
+            add_table.appendChild(tr1)
+            add_table.appendChild(tr2)
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>
